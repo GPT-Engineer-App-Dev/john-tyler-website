@@ -1,15 +1,18 @@
 // Complete the Index page component here
 // Use chakra-ui
-import { Button } from "@chakra-ui/react"; // example
-import { FaPlus } from "react-icons/fa"; // example - use react-icons/fa for icons
+import { Box, Text, Button } from "@chakra-ui/react";
+import { FaFeatherAlt } from "react-icons/fa";
 
 const Index = () => {
-  // TODO: Create the website here!
   return (
-    <Button>
-      Hello world! <FaPlus />
-    </Button>
-  ); // example
+    <Box p={5} bg="brand.800" color="white">
+      <Text fontSize="4xl" fontFamily="Georgia, serif" mb={4}>Welcome to Our Vintage Site</Text>
+      <Text fontSize="2xl" fontFamily="Times New Roman, serif">Explore the charm of the mid-19th century.</Text>
+      <Button leftIcon={<FaFeatherAlt />} mt={3} bg="brand.900" _hover={{ bg: "brand.700" }}>
+        Learn More
+      </Button>
+    </Box>
+  );
 };
 
 export default Index;
